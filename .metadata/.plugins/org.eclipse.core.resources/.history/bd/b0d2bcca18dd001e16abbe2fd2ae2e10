@@ -1,0 +1,25 @@
+package PhamVanKhang_De2;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class QuanLyPhanCong {
+	private ArrayList<PhanCong> qlpc;
+	public QuanLyPhanCong() {
+		qlpc  = new ArrayList<PhanCong>();
+	}
+	public void them() {
+		Scanner sc = new Scanner(System.in);
+		LaiXe lx = new LaiXe(3, "bhd", "njjs", "F");
+		
+		Tuyen t = new Tuyen(2, 3);
+		PhanCong pc = new PhanCong(lx, t, 5);
+		System.out.println(pc.getSoLuot());
+		
+	}
+	public void hien() {
+		for (PhanCong x : qlpc) {
+			System.out.println(x);
+		}
+	}
+}

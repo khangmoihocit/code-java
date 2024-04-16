@@ -1,0 +1,8 @@
+package PhamVanKhang_De2;
+
+import java.security.interfaces.XECKey;
+
+public class Test {
+	QuanLyLaiXe xe = new QuanLyLaiXe();
+	
+}

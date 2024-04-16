@@ -1,0 +1,35 @@
+package main;
+
+public class Test {
+	public static void main(String[] args) {
+		Employee ltv1 = new Programmer(232, "E A", 10, "java");
+		Employee ltv2 = new Programmer(112, "B A", 100, "java");
+		Employee ltv3 = new Programmer(113, "B", 200, "c++");
+		
+		Employee ql1 = new Administrator(221, "C", 300, "phong a");
+		Employee ql2 = new Administrator(222, "d", 400, "phong b");
+		Employee ql3 = new Administrator(223, "e", 500, "phong c");
+		
+		SoftwareHouse softwareHouse = new SoftwareHouse("KK");
+		softwareHouse.addEmployee(ltv1);
+		softwareHouse.addEmployee(ql1);
+		softwareHouse.addEmployee(ql2);
+		softwareHouse.addEmployee(ltv2);
+		softwareHouse.addEmployee(ltv3);
+		softwareHouse.addEmployee(ql3);
+		
+		softwareHouse.displayAllStaff();
+		softwareHouse.sortAllStaffByName();
+		System.out.println("\n");
+		softwareHouse.displayAllStaff();
+		softwareHouse.displayListProgrammers();
+		System.out.println("\n");
+		if (softwareHouse.updateDepartmentForAdmin(113, "phong aaaa")) {
+			softwareHouse.displayAllStaff();
+		}
+		else {
+			System.out.println("not find");
+		}
+		
+	}
+}

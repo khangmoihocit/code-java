@@ -1,0 +1,40 @@
+001205036195
+Phạm Văn Khang
+Ga Hà Nội
+25000
+091234567890
+Nguyễn Thị Hồng
+Ga Sài Gòn
+30000
+012345678901
+Trần Văn Đức
+Ga Đà Nẵng
+28000
+098765432109
+Lê Thị Minh Châu
+Ga Nha Trang
+35000
+076543210987
+Hoàng Văn Tú
+Ga Huế
+27000
+034567890123
+Trần Thị Lan Anh
+Ga Hải Phòng
+26000
+065432109876
+Nguyễn Văn Nam
+Ga Đồng Hới
+29000
+087654321098
+Phan Thị Hương
+Ga Hải Dương
+25500
+023456789012
+Lê Văn Tâm
+Ga Cần Thơ
+31000
+056789012345
+Nguyễn Thị Mai Anh
+Ga Quy Nhơn
+32000

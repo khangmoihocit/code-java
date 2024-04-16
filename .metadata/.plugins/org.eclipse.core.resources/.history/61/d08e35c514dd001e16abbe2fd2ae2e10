@@ -1,0 +1,6 @@
+package PhamVanKhang_De2;
+
+public class Test {
+	QuanLyLaiXe xe = new QuanLyLaiXe();
+	
+}

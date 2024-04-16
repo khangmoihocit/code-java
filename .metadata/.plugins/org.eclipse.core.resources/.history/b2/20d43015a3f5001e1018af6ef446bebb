@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		//vd1: nhap 1 so tu 0-9: "^[0-9]$"
+		Pattern p = Pattern.compile("^[0-9]$");
+		while(true) {
+			System.out.print("input txt: ");
+			String txt = sc.nextLine();
+			if (p.matcher(txt).find()) {
+				System.out.println("txt ok");
+				break;
+			}
+			else {
+				System.out.println("txt not ok");
+			}
+		}
+	}
+}

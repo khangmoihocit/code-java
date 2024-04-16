@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		//vd1: nhap 1 so: "^[0-9]$"
+		//vd2: nhap nhieu so : "^[0-9]+$"
+		//vd3: nhap so >= 6 ki tu
+		//vd4: chi nhap 6 ky tu
+		Pattern p = Pattern.compile("^[a-d]{3,}$");
+		while(true) {
+			System.out.print("input txt: ");
+			String txt = sc.nextLine();
+			if (p.matcher(txt).find()) {
+				System.out.println("txt ok");
+				break;
+			}
+			else {
+				System.out.println("txt not ok");
+			}
+		}
+	}
+}

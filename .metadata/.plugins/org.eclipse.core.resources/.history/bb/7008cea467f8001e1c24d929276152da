@@ -1,0 +1,8 @@
+package main;
+
+public class Test {
+	public static void main(String[] args) {
+		Employee ltv = new Programmer(232, "khang", 10, "java");
+		System.out.println(ltv);
+	}
+}

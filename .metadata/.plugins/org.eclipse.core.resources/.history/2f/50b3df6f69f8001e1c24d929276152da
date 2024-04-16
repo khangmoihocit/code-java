@@ -1,0 +1,15 @@
+package main;
+
+import java.util.ArrayList;
+
+public class SoftwareHouse {
+	private String theName;
+	private ArrayList<Employee> listEmployee;
+	public SoftwareHouse(String theName) {
+		this.theName = theName;
+		listEmployee = new ArrayList<Employee>();
+	}
+//	public boolean addEmployee(Employee x) {
+//		
+//	}
+}

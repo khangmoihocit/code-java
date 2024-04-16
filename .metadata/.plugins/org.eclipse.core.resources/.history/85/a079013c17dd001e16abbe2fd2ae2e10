@@ -1,0 +1,41 @@
+package PhamVanKhang_De2;
+
+public class Tuyen {
+	private int maTuyen, khoangCach, soDiemDung;
+
+	public Tuyen(int maTuyen, int khoangCach, int soDiemDung) {
+		this.maTuyen = maTuyen;
+		this.khoangCach = khoangCach;
+		this.soDiemDung = soDiemDung;
+	}
+
+	public int getMaTuyen() {
+		return maTuyen;
+	}
+
+	public void setMaTuyen(int maTuyen) {
+		this.maTuyen = maTuyen;
+	}
+
+	public int getKhoangCach() {
+		return khoangCach;
+	}
+
+	public void setKhoangCach(int khoangCach) {
+		this.khoangCach = khoangCach;
+	}
+
+	public int getSoDiemDung() {
+		return soDiemDung;
+	}
+
+	public void setSoDiemDung(int soDiemDung) {
+		this.soDiemDung = soDiemDung;
+	}
+
+	@Override
+	public String toString() {
+		return "Tuyen [maTuyen=" + maTuyen + ", khoangCach=" + khoangCach + ", soDiemDung=" + soDiemDung + "]";
+	}
+	
+}

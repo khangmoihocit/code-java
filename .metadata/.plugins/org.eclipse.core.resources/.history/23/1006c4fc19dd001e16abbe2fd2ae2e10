@@ -1,0 +1,37 @@
+package PhamVanKhang_De2;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class QuanLyPhanCong {
+	private ArrayList<PhanCong> qlpc;
+	public QuanLyPhanCong() {
+		qlpc  = new ArrayList<PhanCong>();
+	}
+	public void them() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("nhap ma lai xe: ");
+		int maLX = sc.nextInt();
+		sc.nextLine();
+		System.out.print("nhap ho ten: ");
+		String hoTen = sc.nextLine();
+		System.out.print("nhap dia chi: ");
+		String diac = sc.nextLine();
+		System.out.print("nhap trinh do (A --> F): ");
+		String t = sc.nextLine();
+		LaiXe lx = new LaiXe(maLX, hoTen, diac, t);
+		System.out.print("nhap khoang cach: ");
+		int kc = sc.nextInt();
+		System.out.print("nhap so diem dung: ");
+		int diemDung = sc.nextInt();
+		Tuyen tuyen = new Tuyen(kc, diemDung);	
+		PhanCong pc = new PhanCong(lx, tuyen, 5);
+		qlpc.add(pc);
+		
+	}
+	public void hien() {
+		for (PhanCong x : qlpc) {
+			System.out.println(x);
+		}
+	}
+}

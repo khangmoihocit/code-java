@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class p2 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		//vd1: nhap theo dinh dang "123-123-1234" : "^[0-9]{3}-[0-9]{3}-[0-9]{4}$"
+		//vd2: nhap x hoac ex tai 1 cho "^[0-9]{3}[x|ex]$"
+		Pattern pattern = Pattern.compile("^[0-9]{3}[e|khang]$");
+		while(true) {
+			System.out.print("input txt: ");
+			String txt = sc.nextLine();
+			if (pattern.matcher(txt).find()) {
+				System.out.println("txt is ok");
+				break;
+			}
+			else {
+				System.err.println("txt is not ok");
+			}
+		}
+	}
+}

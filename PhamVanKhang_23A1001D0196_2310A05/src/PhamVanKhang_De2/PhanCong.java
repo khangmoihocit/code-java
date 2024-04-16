@@ -1,0 +1,39 @@
+package PhamVanKhang_De2;
+
+public class PhanCong {
+	private LaiXe lx;
+	private Tuyen tuyen;
+	private int soLuot;
+	public PhanCong(LaiXe lx, Tuyen tuyen, int soLuot) {
+		this.lx = lx;
+		this.tuyen = tuyen;
+		this.soLuot = soLuot;
+	}
+	public LaiXe getLx() {
+		return lx;
+	}
+	public void setLx(LaiXe lx) {
+		this.lx = lx;
+	}
+	public Tuyen getTuyen() {
+		return tuyen;
+	}
+	public void setTuyen(Tuyen tuyen) {
+		this.tuyen = tuyen;
+	}
+	public int getSoLuot() {
+		return soLuot;
+	}
+	public void setSoLuot(int soLuot) {
+		this.soLuot = soLuot;
+	}
+	public PhanCong() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Override
+	public String toString() {
+		return "PhanCong [lx=" + lx + ", tuyen=" + tuyen + ", soLuot=" + soLuot + "]";
+	}
+	
+}

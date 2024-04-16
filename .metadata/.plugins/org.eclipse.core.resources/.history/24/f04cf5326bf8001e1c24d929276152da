@@ -1,0 +1,28 @@
+package main;
+
+import java.util.ArrayList;
+
+public class SoftwareHouse {
+	private String theName;
+	private ArrayList<Employee> listEmployee;
+
+	public SoftwareHouse(String theName) {
+		this.theName = theName;
+		listEmployee = new ArrayList<Employee>();
+	}
+
+	public boolean addEmployee(Employee emp) {
+		for (Employee x : listEmployee) {
+			if (x.getThePayrollNumber() == emp.getThePayrollNumber()) {
+				return false;
+			}
+		}
+		listEmployee.add(emp);
+		return true;
+	}
+	public void displayAllStaff() {
+		for (Employee x : listEmployee) {
+			System.out.println(x);
+		}
+	}
+}

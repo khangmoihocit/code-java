@@ -1,0 +1,35 @@
+package main;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.ObjectInput;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutput;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
+//cach ghi 1 doi tuong vo file
+public class ghiFile {
+	public static void main(String[] args) {
+		try {
+			File file = new File("output.data");
+			file.createNewFile();
+			OutputStream os = new FileOutputStream(file);
+			ObjectOutput oos = new ObjectOutputStream(os);
+			
+			SinhVien sv1 = new SinhVien("khang", "A05");
+			oos.writeObject(sv1);
+			oos.close();
+			InputStream is = new FileInputStream(file);
+			ObjectInputStream ois = new ObjectInputStream(is);
+			SinhVien sv = (SinhVien) ois.readObject();
+			System.out.println(sv);
+			ois.close();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		
+	}
+}

@@ -1,0 +1,54 @@
+package main;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+public class SoftwareHouse {
+	private String theName;
+	private ArrayList<Employee> listEmployee;
+
+	public SoftwareHouse(String theName) {
+		this.theName = theName;
+		listEmployee = new ArrayList<Employee>();
+	}
+
+	//them
+	public boolean addEmployee(Employee emp) {
+		for (Employee x : listEmployee) {
+			if (x.getThePayrollNumber() == emp.getThePayrollNumber()) {
+				return false;
+			}
+		}
+		listEmployee.add(emp);
+		return true;
+	}
+	
+	//hien thi danh sach
+	public void displayAllStaff() {
+		for (Employee x : listEmployee) {
+			System.out.println(x);
+		}
+	}
+	//tong so tien phai tra cho nv
+	public double getMonthlySalaryBill() {
+		double sum = 0;
+		for (Employee x : listEmployee) {
+			sum += x.getMonthSalary();
+		}
+		return sum;
+	}
+	//sap xep theo ten
+	public void sortAllStaffByName() {
+		Collections.sort(listEmployee, new Comparator<Employee>() {
+
+			@Override
+			public int compare(Employee o1, Employee o2) {
+				String[] arr1 = o1.getTheName().split("\\s+");
+				String[] arr2 = o2.getTheName().split("\\s+");
+				Str
+				return 0;
+			}
+		});
+	}
+}

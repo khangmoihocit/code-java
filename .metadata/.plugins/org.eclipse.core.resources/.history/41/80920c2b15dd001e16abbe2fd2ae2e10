@@ -1,0 +1,10 @@
+package PhamVanKhang_De2;
+
+import java.security.interfaces.XECKey;
+
+public class Test {
+	public static void main(String[] args) {
+		QuanLyLaiXe xe = new QuanLyLaiXe();
+		xe.them();
+	}
+}

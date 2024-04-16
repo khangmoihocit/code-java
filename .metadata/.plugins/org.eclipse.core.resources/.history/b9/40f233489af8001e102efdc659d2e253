@@ -1,0 +1,9 @@
+package main;
+
+import java.util.TreeSet;
+
+public class Section {
+	private String sectionNor, semester, room;
+	private Faculty faculty;
+	private TreeSet<Enrolment> setEmrolment;
+}

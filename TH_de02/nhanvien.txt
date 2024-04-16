@@ -1,0 +1,2 @@
+NhanVien [maNV=001, hoTen=pham van khang, ngaySinh=18/02/2005, gioiTinh=nam, email=lhang@]NhanVienLauNam [soNamKinhNghiem=2, kyNangChuyenMon=c]
+NhanVien [maNV=002, hoTen=nguyen van a, ngaySinh=12/12/2001, gioiTinh=nu, email=a@]NhanVienMoiRaTruong [namTotNghiep=2015, xepLoaiTN=gioi, truongTN=thpt]

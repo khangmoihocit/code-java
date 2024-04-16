@@ -1,0 +1,57 @@
+package PhamVanKhang_De2;
+
+import java.security.PublicKey;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Scanner;
+
+public class QuanLyPhanCong {
+	private ArrayList<PhanCong> qlpc;
+	public QuanLyPhanCong() {
+		qlpc  = new ArrayList<PhanCong>();
+	}
+	public void them(Tuyen tuyen) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Nhap danh sach phan cong: ");
+		System.out.print("nhap ma lai xe: ");
+		int maLX = sc.nextInt();
+		sc.nextLine();
+		System.out.print("nhap ho ten: ");
+		String hoTen = sc.nextLine();
+		System.out.print("nhap dia chi: ");
+		String diac = sc.nextLine();
+		System.out.print("nhap trinh do (A --> F): ");
+		String t = sc.nextLine();
+		LaiXe lx = new LaiXe(maLX, hoTen, diac, t);
+		System.out.print("nhap so luot: ");
+		int luot= sc.nextInt();
+		
+		PhanCong pc = new PhanCong(lx, tuyen, luot);
+		qlpc.add(pc);
+		
+	}
+	public void hien() {
+		for (PhanCong x : qlpc) {
+			System.out.println(x);
+		}
+	}
+	public void sapXepTen() {
+		Collections.sort(qlpc, new Comparator<PhanCong>() {
+			@Override
+			public int compare(PhanCong o1, PhanCong o2) {
+				if (o1.getLx().getHoTen().compareTo(o2.getLx().getHoTen()) < 0) return -1;
+				else return 1;
+			}
+		});
+	}
+	
+	public void sapXepSoLuongTuyen() {
+		Collections.sort(qlpc, new Comparator<PhanCong>() {
+			@Override
+			public int compare(PhanCong o1, PhanCong o2) {
+				return 0;
+			}
+		});
+	}
+}

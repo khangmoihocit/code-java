@@ -1,0 +1,29 @@
+package PhamVanKhang_De2;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class QuanLyLaiXe {
+	private ArrayList<LaiXe> qllx;
+	public QuanLyLaiXe() {
+		qllx = new ArrayList<LaiXe>();
+	}
+	public void them() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("nhap ma lai xe: ");
+		int maLX = sc.nextInt();
+		System.out.print("nhap ho ten: ");
+		String hoTen = sc.nextLine();
+		System.out.print("nhap dia chi: ");
+		String diac = sc.nextLine();
+		System.out.print("nhap trinh do (A --> F): ");
+		String t = sc.nextLine();
+		LaiXe laiXe = new LaiXe(maLX, hoTen, diac, t);
+		qllx.add(laiXe);
+	}
+	public void hien() {
+		for (LaiXe x : qllx) {
+			System.out.println(x);
+		}
+	}
+}

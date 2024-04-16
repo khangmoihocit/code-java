@@ -1,0 +1,48 @@
+package main;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.TreeSet;
+
+import quanly.Kho;
+import quanly.NhanVien;
+import quanly.QuanLyKho;
+import quanly.QuanLySanPham;
+
+public class tests {
+	public static void main(String[] args) {
+		// QuanLySanPham qlsp = new QuanLySanPham();
+		// qlsp.docFile();
+		// Scanner sc = new Scanner(System.in);
+		// NhanVien nhanVien1 = new NhanVien("001", "Nguyễn Văn A", "20", "Hà Nội", 10000000);
+		// NhanVien nhanVien2 = new NhanVien("002", "Nguyễn Văn B", "21", "Hà Nội", 12000000);
+		// NhanVien nhanVien3 = new NhanVien("003", "Nguyễn Văn C", "22", "Hà Nội", 15000000);
+		// Kho kho1 = new Kho("001", "Khu vực A", "Realme"," nhanVien1");
+		// Kho kho2 = new Kho("002", "Khu vực B", "vivo", "nhanVien2");
+		// Kho kho3 = new Kho("003", "Khu vực C", "Samsung", "nhanVien3");
+		// // kho1.khoiTaokho(qlsp);
+		// // kho2.khoiTaokho(qlsp);
+		// // kho3.khoiTaokho(qlsp);
+		// // kho2.thongTinChiTietKho();
+		// // kho3.thongTinChiTietKho();
+		// // kho1.thongTinChiTietKho();
+		// QuanLyKho qlk = new QuanLyKho();
+		// qlk.docFile();
+		// qlk.hienThiDanhSachKho();
+		// System.out.print("Nhập mã kho cần xem chi tiết: ");
+		// String maKho = sc.nextLine();
+		// qlk.hienThiChiTietKho(maKho, qlsp);
+		TreeSet<Integer> set  = new TreeSet<Integer>(); 
+		ArrayList<Integer> list  = new ArrayList<Integer>();
+		set.add(1);
+		set.add(1);
+		set.add(2);
+		list.add(1);
+		list.add(1);
+		list.add(2);
+		set.remove(1);
+		for (int x : set) {
+			System.out.println(x);
+		}
+	}
+}

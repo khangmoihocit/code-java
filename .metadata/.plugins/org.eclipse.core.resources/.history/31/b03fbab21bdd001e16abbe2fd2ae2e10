@@ -1,0 +1,13 @@
+package PhamVanKhang_De2;
+public class Test {
+	public static void main(String[] args) {
+		QuanLyLaiXe xe = new QuanLyLaiXe();
+		QuanLyTuyen t=  new QuanLyTuyen();
+		QuanLyPhanCong pc = new QuanLyPhanCong();
+		pc.them();
+		pc.them();
+		pc.hien();
+		pc.sapXepTen();
+		pc.hien();
+	}
+}

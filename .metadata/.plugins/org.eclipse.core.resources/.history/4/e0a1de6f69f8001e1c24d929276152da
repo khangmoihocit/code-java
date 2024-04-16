@@ -1,0 +1,39 @@
+package main;
+
+public abstract class Employee {
+	protected int thePayrollNumber;
+	protected String theName;
+	protected double theBasicMonthlySalary;
+	public Employee(int thePayrollNumber, String theName, double theBasicMonthlySalary) {
+		this.thePayrollNumber = thePayrollNumber;
+		this.theName = theName;
+		this.theBasicMonthlySalary = theBasicMonthlySalary;
+	}
+	public int getThePayrollNumber() {
+		return thePayrollNumber;
+	}
+	public void setThePayrollNumber(int thePayrollNumber) {
+		this.thePayrollNumber = thePayrollNumber;
+	}
+	public String getTheName() {
+		return theName;
+	}
+	public void setTheName(String theName) {
+		this.theName = theName;
+	}
+	public double getTheBasicMonthlySalary() {
+		return theBasicMonthlySalary;
+	}
+	public void setTheBasicMonthlySalary(double theBasicMonthlySalary) {
+		this.theBasicMonthlySalary = theBasicMonthlySalary;
+	}
+	
+	public abstract double getMonthSalary();
+	
+	@Override
+	public String toString() {
+		return "Employee [thePayrollNumber=" + thePayrollNumber + ", theName=" + theName + ", theBasicMonthlySalary="
+				+ this.getMonthSalary();
+	}
+	
+}

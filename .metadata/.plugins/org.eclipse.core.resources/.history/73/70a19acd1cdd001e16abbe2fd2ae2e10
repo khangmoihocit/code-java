@@ -1,0 +1,25 @@
+package PhamVanKhang_De2;
+
+import java.util.Scanner;
+
+public class Test {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		QuanLyLaiXe lxe = new QuanLyLaiXe();
+		QuanLyTuyen t=  new QuanLyTuyen();
+		QuanLyPhanCong pc = new QuanLyPhanCong();
+		
+		for (int i=0; i<3; ++i) {
+			lxe.them();
+		}
+		for (int i=0; i<3; ++i) {
+			t.them();
+		}
+		
+		System.out.print("nhap so tuyen muon phan cho nguoi lai: ");
+		int n = sc.nextInt();
+		pc.them(t.tuyen(n));
+		pc.hien();
+		
+	}
+}

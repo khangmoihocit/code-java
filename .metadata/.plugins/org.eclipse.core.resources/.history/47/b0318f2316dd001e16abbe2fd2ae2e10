@@ -1,0 +1,12 @@
+package PhamVanKhang_De2;
+
+import java.security.interfaces.XECKey;
+
+public class Test {
+	public static void main(String[] args) {
+		QuanLyLaiXe xe = new QuanLyLaiXe();
+		int c = 001;
+		String cString = Integer.toString(c);
+		System.out.println(cString);
+	}
+}

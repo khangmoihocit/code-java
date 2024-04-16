@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\23a10\OneDrive\Máy tính\BTL_OPP_HOU\01_quanLyCuaHangDT"/>
+			<item value="D:\java_VS"/>
+			<item value="D:\java_28tech\TH_ST3"/>
+			<item value="D:\image\LTHDT_De11"/>
+			<item value="D:\java_TITV"/>
+			<item value="C:\Users\23a10\OneDrive\Hình ảnh\Ảnh chụp màn hình\BTTH_01"/>
+			<item value="D:\java_netbean\sanpham"/>
+			<item value="D:\java_netbean\file"/>
+			<item value="D:\java_28tech"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+</section>
